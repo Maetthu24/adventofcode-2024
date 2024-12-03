@@ -26,3 +26,10 @@ fun check(actual: Int, expected: Int) {
     }
     check(expected == actual)
 }
+
+fun check(actual: Long, expected: Long) {
+    if (expected != actual) {
+        println("Check failed: Expected $expected, actual $actual")
+    }
+    check(expected == actual)
+}
